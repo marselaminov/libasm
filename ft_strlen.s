@@ -1,25 +1,19 @@
+global _ft_strlen
+
 section	.text
-		global _ft_strlen
 
 _ft_strlen:
-		; set rax to 0
-		mov		rax, 0
-		; go to loop
-		jmp		loop
+		mov		rax, 0					; put rax to 0
+		jmp		loop					; go to loop
 
-.increm:
+increment:
 		inc		rax
 
-.loop:
-		; compare the pointed char to 0
-		cmp 	BYTE [rdi + rax], 0
-		; if = \0 , close programm
-		je		close
-		; go to increment if compare was false
-		jmp		increm
-		; continue loop
-		jmp		loop
+loop:
+		cmp 	BYTE [rdi + rax], 0		; compare the pointed char to 0
+		je		close					; if == \0 -> close programm and return result
+		jne		increment				; if compare was false -> go to rax++
+		jmp		loop					; continue loop
 
-.close:
-		; return rax
-		ret
+close:
+		ret								; return rax
