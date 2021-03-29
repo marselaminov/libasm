@@ -3,7 +3,7 @@ global _ft_strcpy
 section	.text
 
 _ft_strcpy:
-		mov		rcx, 0					; set rcx to 0
+		mov		rcx, 0					; put rcx to 0
 		mov		rdx, 0
 		cmp		rsi, 0
 		jz		close
@@ -22,5 +22,5 @@ loop:
 
 
 close:
-		mov		rax, rdi				; set rdi to rax
+		mov		rax, rdi				; put rdi to rax
 		ret								; return rax
