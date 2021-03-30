@@ -6,7 +6,7 @@
 /*   By: legunshi <legunshi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/28 10:33:11 by legunshi          #+#    #+#             */
-/*   Updated: 2021/03/29 18:51:48 by legunshi         ###   ########.fr       */
+/*   Updated: 2021/03/30 21:11:42 by legunshi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	strcmp_check()
 {
 	char	*s1 = "Hey";
 	char	*s2 = "Hello";
-	char	*s3 = "Ops";
+	char	*s3 = "Hey";
 	
 	printf("\n | FT_STRCMP | \n");
 	printf("test1 : %d\n", ft_strcmp(s1, s2));
